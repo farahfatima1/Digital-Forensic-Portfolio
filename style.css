@@ -959,3 +959,36 @@ body {
         display:flex;
     }
 }
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+        font-size: 32px;
+        color: #4db8ff;
+    }
+
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #0b2239;
+        width: 220px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+
+    nav ul.show {
+        display: flex;
+    }
+
+}
