@@ -493,3 +493,54 @@ nav ul li{
 }
 
 }
+/* ===== Premium Portfolio Glow Effect ===== */
+
+/* All Cards Glow */
+.card,
+.project-card,
+.skill-card,
+.contact-card,
+.stats-card,
+.profile-card,
+.certificate-card{
+    transition:0.4s ease;
+}
+
+.card:hover,
+.project-card:hover,
+.skill-card:hover,
+.contact-card:hover,
+.stats-card:hover,
+.profile-card:hover,
+.certificate-card:hover{
+    transform:translateY(-8px);
+    border-color:#4db8ff;
+    box-shadow:
+    0 0 12px rgba(77,184,255,0.5),
+    0 0 30px rgba(77,184,255,0.25);
+}
+
+
+/* Buttons Glow */
+.btn:hover,
+button:hover{
+    box-shadow:
+    0 0 12px rgba(77,184,255,0.7),
+    0 0 25px rgba(77,184,255,0.4);
+    transform:translateY(-3px);
+}
+
+
+/* Navigation Links Glow */
+nav ul li a:hover{
+    text-shadow:
+    0 0 10px #4db8ff;
+}
+
+
+/* Headings Glow */
+h1:hover,
+h2:hover{
+    text-shadow:
+    0 0 15px rgba(77,184,255,0.7);
+}
