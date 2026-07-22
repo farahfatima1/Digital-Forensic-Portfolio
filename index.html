@@ -12,39 +12,75 @@
 <body>
 
 
-    <!-- Navigation -->
+   <script>
+function toggleMenu() {
+  document.getElementById("nav-menu").classList.toggle("show");
+}
+</script>
 
-    <nav>
+<style>
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a192f;
+  padding: 15px 30px;
+  position: relative;
+}
 
-        <div class="logo">Farah Fatima</div>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+.logo {
+  color: #64ffda;
+  font-size: 22px;
+  font-weight: bold;
+}
 
-        <ul>
+ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
 
-            <li><a href="index.html">Home</a></li>
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
 
-            <li><a href="About.html">About</a></li>
+ul li a:hover {
+  color: #64ffda;
+}
 
-            <li><a href="Projects.html">Projects</a></li>
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #64ffda;
+  z-index: 1001;
+}
 
-            <li><a href="Reports.html">Reports</a></li>
-
-            <li><a href="Toolkit.html">Toolkit</a></li>
-
-            <li><a href="Case_Studies.html">Case Studies</a></li>
-
-            <li><a href="Blogs.html">Blogs</a></li>
-
-            <li><a href="Certifications.html">Certifications</a></li>
-
-            <li><a href="Resume.html">Resume</a></li>
-
-            <li><a href="Contact.html">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
+@media (max-width: 768px) {
+  ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #0a192f;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000;
+  }
+  ul.show {
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+</style>
     <!-- Hero Section -->
 
     <section class="hero">
