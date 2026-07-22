@@ -1,3 +1,3 @@
-function toggleMenu(){
-    document.querySelector("nav ul").classList.toggle("active");
+function toggleMenu() {
+  document.getElementById("nav-menu").classList.toggle("show");
 }
