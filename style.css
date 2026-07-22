@@ -936,3 +936,26 @@ body {
     }
 
 }
+@media(max-width:768px){
+
+    .menu-icon{
+        display:block;
+        font-size:30px;
+        cursor:pointer;
+    }
+
+    #nav-menu{
+        display:none;
+        flex-direction:column;
+        background:#0b2239;
+        position:absolute;
+        top:70px;
+        right:0;
+        width:200px;
+        padding:20px;
+    }
+
+    #nav-menu.show{
+        display:flex;
+    }
+}
