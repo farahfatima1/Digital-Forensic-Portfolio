@@ -992,72 +992,11 @@ body {
     }
 
 }
-/* Cyber Digital Rain Background */
-
-.matrix-bg{
-    position:fixed;
-    inset:0;
-    overflow:hidden;
-    z-index:-1;
-}
-
-
-.matrix-bg span{
-    position:absolute;
-    color:#4db8ff;
-    font-size:18px;
-    font-family:monospace;
-    opacity:0.5;
-    text-shadow:0 0 10px #4db8ff;
-    animation:rain 1.5s linear infinite;
-}
-
-
-.matrix-bg span:nth-child(1){
-    left:10%;
-    animation-delay:0s;
-}
-
-.matrix-bg span:nth-child(2){
-    left:25%;
-    animation-delay:2s;
-}
-
-.matrix-bg span:nth-child(3){
-    left:45%;
-    animation-delay:4s;
-}
-
-.matrix-bg span:nth-child(4){
-    left:65%;
-    animation-delay:1s;
-}
-
-.matrix-bg span:nth-child(5){
-    left:80%;
-    animation-delay:3s;
-}
-
-.matrix-bg span:nth-child(6){
-    left:90%;
-    animation-delay:5s;
-}
-
-
-@keyframes rain{
-
-    from{
-        transform:translateY(-100px);
-        opacity:0;
-    }
-
-    50%{
-        opacity:0.7;
-    }
-
-    to{
-        transform:translateY(900px);
-        opacity:0;
-    }
-
-}
+<div class="dna-bg">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
