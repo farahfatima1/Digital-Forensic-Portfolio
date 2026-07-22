@@ -317,3 +317,42 @@ nav ul li{
     background: #ffffff;
     color: #081b29;
 }
+/* ===== Home Buttons Responsive ===== */
+
+.home-buttons{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#4db8ff;
+    color:#081b29;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* Mobile Responsive */
+@media(max-width:600px){
+
+    .home-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+        padding:12px 20px;
+    }
+
+}
