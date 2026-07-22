@@ -901,6 +901,10 @@ h2:hover{
    PREMIUM SKILLS FLIP CARDS
 ========================== */
 
+/* ==========================
+   PREMIUM SKILL FLIP CARDS
+========================== */
+
 .skills{
     padding:80px 8%;
 }
@@ -913,7 +917,7 @@ h2:hover{
 }
 
 
-/* 2x2 Grid */
+/* Desktop 2x2 Grid */
 
 .skills-grid{
     display:grid;
@@ -924,12 +928,11 @@ h2:hover{
 }
 
 
-
-/* Flip Card */
+/* Card */
 
 .flip-card{
 
-    height:250px;
+    height:260px;
     perspective:1000px;
 
 }
@@ -946,7 +949,6 @@ h2:hover{
     transform-style:preserve-3d;
 
 }
-
 
 
 .flip-card:hover .flip-card-inner{
@@ -971,11 +973,10 @@ h2:hover{
 
     border-radius:16px;
 
-    padding:25px;
+    padding:24px;
 
     box-sizing:border-box;
 
-    border:1px solid rgba(77,184,255,.35);
 
     background:
     linear-gradient(
@@ -985,6 +986,9 @@ h2:hover{
     );
 
 
+    border:1px solid rgba(77,184,255,.35);
+
+
     box-shadow:
     0 0 25px rgba(77,184,255,.15);
 
@@ -992,17 +996,17 @@ h2:hover{
 
 
 
-/* Front Design */
+/* Front */
 
 .flip-card-front{
 
     display:flex;
 
-    flex-direction:column;
-
     justify-content:center;
 
     align-items:center;
+
+    flex-direction:column;
 
     text-align:center;
 
@@ -1022,7 +1026,7 @@ h2:hover{
 
     color:#4db8ff;
 
-    font-size:25px;
+    font-size:24px;
 
     margin:10px;
 
@@ -1033,10 +1037,7 @@ h2:hover{
 
     color:white;
 
-    font-size:16px;
-
 }
-
 
 
 .flip-card-front span{
@@ -1051,15 +1052,19 @@ h2:hover{
 
 
 
-/* Back Design */
+
+/* Back */
 
 .flip-card-back{
 
     transform:rotateY(180deg);
 
-    overflow:hidden;
+    display:flex;
+
+    flex-direction:column;
 
 }
+
 
 
 .flip-card-back h3{
@@ -1068,19 +1073,28 @@ h2:hover{
 
     text-align:center;
 
-    font-size:22px;
+    font-size:20px;
+
+    margin-bottom:15px;
 
     border-bottom:1px solid rgba(77,184,255,.3);
 
-    padding-bottom:10px;
-
-    margin-bottom:15px;
+    padding-bottom:8px;
 
 }
 
 
 
+/* 4 Columns Skill Layout */
+
 .flip-card-back ul{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:10px;
+
 
     list-style:none;
 
@@ -1094,19 +1108,23 @@ h2:hover{
 
 .flip-card-back li{
 
-    color:white;
-
     background:#10273f;
 
-    border-left:3px solid #4db8ff;
+    color:white;
 
-    padding:6px 12px;
 
-    margin:6px 0;
+    padding:8px 5px;
 
-    border-radius:8px;
+    border-radius:10px;
 
-    font-size:14px;
+
+    border:1px solid rgba(77,184,255,.25);
+
+
+    text-align:center;
+
+    font-size:12px;
+
 
     transition:.3s;
 
@@ -1116,9 +1134,23 @@ h2:hover{
 
 .flip-card-back li:hover{
 
-    transform:translateX(8px);
+    background:#4db8ff;
 
-    background:#16395b;
+    color:#06131f;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* Hover Glow */
+
+.flip-card:hover .flip-card-front,
+.flip-card:hover .flip-card-back{
+
+    box-shadow:
+    0 0 30px rgba(77,184,255,.35);
 
 }
 
@@ -1127,7 +1159,6 @@ h2:hover{
 /* Mobile */
 
 @media(max-width:768px){
-
 
 .skills-grid{
 
@@ -1138,9 +1169,15 @@ h2:hover{
 
 .flip-card{
 
-    height:270px;
+    height:280px;
 
 }
 
+
+.flip-card-back ul{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
 
 }
