@@ -897,41 +897,250 @@ h2:hover{
         transform:translateX(80px);
     }
 }
-/* Skills Grid */
+/* ==========================
+   PREMIUM SKILLS FLIP CARDS
+========================== */
+
+.skills{
+    padding:80px 8%;
+}
+
+.skills h2{
+    text-align:center;
+    color:#4db8ff;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+
+/* 2x2 Grid */
+
 .skills-grid{
     display:grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:repeat(2,1fr);
     gap:30px;
     max-width:1100px;
     margin:auto;
 }
 
-/* Skill Card */
-.skill-card{
+
+
+/* Flip Card */
+
+.flip-card{
+
+    height:250px;
+    perspective:1000px;
+
+}
+
+
+.flip-card-inner{
+
+    position:relative;
     width:100%;
-    min-height:220px;
-    padding:24px;
+    height:100%;
 
-    background:rgba(11,34,57,0.75);
-    backdrop-filter:blur(12px);
+    transition:transform .8s ease;
 
-    border:1px solid rgba(77,184,255,0.25);
-    border-radius:12px;
+    transform-style:preserve-3d;
 
-    transition:0.35s ease;
+}
+
+
+
+.flip-card:hover .flip-card-inner{
+
+    transform:rotateY(180deg);
+
+}
+
+
+
+/* Front + Back */
+
+.flip-card-front,
+.flip-card-back{
+
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    backface-visibility:hidden;
+
+    border-radius:16px;
+
+    padding:25px;
+
     box-sizing:border-box;
+
+    border:1px solid rgba(77,184,255,.35);
+
+    background:
+    linear-gradient(
+    145deg,
+    rgba(11,34,57,.95),
+    rgba(6,19,31,.95)
+    );
+
+
+    box-shadow:
+    0 0 25px rgba(77,184,255,.15);
+
 }
 
-.skill-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 25px rgba(77,184,255,0.35);
+
+
+/* Front Design */
+
+.flip-card-front{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
 }
+
+
+.icon{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+}
+
+
+.flip-card-front h3{
+
+    color:#4db8ff;
+
+    font-size:25px;
+
+    margin:10px;
+
+}
+
+
+.flip-card-front p{
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+
+
+.flip-card-front span{
+
+    margin-top:20px;
+
+    color:#4db8ff;
+
+    font-size:14px;
+
+}
+
+
+
+/* Back Design */
+
+.flip-card-back{
+
+    transform:rotateY(180deg);
+
+    overflow:hidden;
+
+}
+
+
+.flip-card-back h3{
+
+    color:#4db8ff;
+
+    text-align:center;
+
+    font-size:22px;
+
+    border-bottom:1px solid rgba(77,184,255,.3);
+
+    padding-bottom:10px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.flip-card-back ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+
+
+.flip-card-back li{
+
+    color:white;
+
+    background:#10273f;
+
+    border-left:3px solid #4db8ff;
+
+    padding:6px 12px;
+
+    margin:6px 0;
+
+    border-radius:8px;
+
+    font-size:14px;
+
+    transition:.3s;
+
+}
+
+
+
+.flip-card-back li:hover{
+
+    transform:translateX(8px);
+
+    background:#16395b;
+
+}
+
+
 
 /* Mobile */
-@media (max-width:768px){
+
+@media(max-width:768px){
+
 
 .skills-grid{
+
     grid-template-columns:1fr;
+
 }
+
+
+.flip-card{
+
+    height:270px;
+
+}
+
 
 }
