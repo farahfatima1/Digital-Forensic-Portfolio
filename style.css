@@ -1610,3 +1610,11 @@ h2:hover{
 
 
 }
+body{
+    background:#081b29 !important;
+    color:white;
+}
+
+section{
+    background:transparent;
+}
