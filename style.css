@@ -1978,3 +1978,37 @@ section{
 .project-card{
     background:rgba(16,44,72,0.85) !important;
 }
+/* FORCE PROJECTS DARK BACKGROUND */
+
+html, body{
+    background:#0a192f !important;
+    color:#e6f1ff !important;
+}
+
+
+.projects-section{
+    background:#0a192f !important;
+    color:#e6f1ff !important;
+    min-height:100vh !important;
+}
+
+
+.projects{
+    background:#0a192f !important;
+}
+
+
+.project-card{
+    background:#102c48 !important;
+    color:#e6f1ff !important;
+}
+
+
+.project-card h2{
+    color:#00d4ff !important;
+}
+
+
+.project-card p{
+    color:#e6f1ff !important;
+}
