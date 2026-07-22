@@ -2012,3 +2012,51 @@ html, body{
 .project-card p{
     color:#e6f1ff !important;
 }
+/* Resume, Certifications & Contact Mobile Fix */
+
+@media(max-width:768px){
+
+.resume-section,
+.certifications-section,
+.contact-section{
+
+    min-height:80vh;
+
+    padding:50px 20px;
+
+}
+
+
+.resume-card,
+.certificate-card,
+.contact-card{
+
+    width:100%;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+}
+
+
+.resume-section h1,
+.certifications-section h1,
+.contact-section h1{
+
+    font-size:32px;
+
+}
+
+
+.resume-section p,
+.certifications-section p,
+.contact-section p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+}
