@@ -1009,7 +1009,7 @@ body {
     font-family:monospace;
     opacity:0.5;
     text-shadow:0 0 10px #4db8ff;
-    animation:rain 18s linear infinite;
+    animation:rain 1.5s linear infinite;
 }
 
 
