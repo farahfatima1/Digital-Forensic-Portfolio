@@ -1618,3 +1618,102 @@ body{
 section{
     background:transparent;
 }
+/* Blogs Page Theme */
+
+.blogs-section{
+
+    background:#0a192f;
+
+    min-height:70vh;
+
+    padding:60px 8%;
+
+}
+
+
+.blogs-section h1{
+
+    color:#00d4ff;
+
+    text-align:center;
+
+    font-size:40px;
+
+}
+
+
+
+.blogs-section p{
+
+    color:#e6f1ff;
+
+}
+
+
+
+.coming-card{
+
+    background:rgba(16,44,72,0.85);
+
+    color:#e6f1ff;
+
+    border:1px solid rgba(0,212,255,0.3);
+
+    border-radius:18px;
+
+    padding:40px;
+
+    width:60%;
+
+    margin:60px auto;
+
+    text-align:center;
+
+    box-shadow:0 0 25px rgba(0,212,255,.15);
+
+}
+
+
+
+.coming-icon{
+
+    font-size:55px;
+
+}
+
+
+
+.coming-card h2{
+
+    color:#00d4ff;
+
+}
+
+
+
+.coming-card button{
+
+    background:#00d4ff;
+
+    color:#0a192f;
+
+    border:none;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+}
+
+
+@media(max-width:768px){
+
+.coming-card{
+
+    width:90%;
+
+}
+
+}
