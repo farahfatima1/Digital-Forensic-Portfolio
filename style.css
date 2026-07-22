@@ -1746,3 +1746,32 @@ section{
     color:#e6f1ff;
 
 }
+/* Reports Page */
+
+.reports-section{
+
+    background:#0a192f;
+
+    min-height:70vh;
+
+    padding:60px 8%;
+
+}
+
+
+.reports-section h1{
+
+    color:#00d4ff;
+
+    text-align:center;
+
+    font-size:40px;
+
+}
+
+
+.reports-section p{
+
+    color:#e6f1ff;
+
+}
