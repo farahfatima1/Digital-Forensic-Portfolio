@@ -492,6 +492,281 @@ nav ul li{
     height:150px;
 }
 
+}  
+/* ==========================
+      PREMIUM ABOUT PAGE
+========================== */
+
+
+.about-page{
+
+    width:85%;
+    margin:auto;
+    padding:60px 0;
+
+}
+
+
+.about-page h1{
+
+    text-align:center;
+
+    color:#4db8ff;
+
+    font-size:42px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* ==========================
+   Premium Information Cards
+========================== */
+
+
+.objective-card,
+.skills-card,
+.tools-card{
+
+
+    background:rgba(11,34,57,0.85);
+
+    backdrop-filter:blur(12px);
+
+
+    padding:30px;
+
+
+    margin:30px 0;
+
+
+    border-radius:18px;
+
+
+    border:1px solid rgba(77,184,255,0.35);
+
+
+    box-shadow:
+    0 0 20px rgba(77,184,255,0.08);
+
+
+    transition:.3s;
+
+}
+
+
+
+.objective-card:hover,
+.skills-card:hover,
+.tools-card:hover{
+
+
+    transform:translateY(-6px);
+
+
+    box-shadow:
+    0 0 30px rgba(77,184,255,0.25);
+
+}
+
+
+
+
+.objective-card h2,
+.skills-card h2,
+.tools-card h2{
+
+
+    color:#4db8ff;
+
+    font-size:25px;
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+.objective-card p{
+
+
+    color:#d7e7f7;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+/* ==========================
+      Skills Grid
+========================== */
+
+
+.skill-tags{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(3,1fr);
+
+
+    gap:14px;
+
+
+}
+
+
+
+
+.skill-tags span,
+.tool-tags span{
+
+
+    background:#10273f;
+
+
+    color:white;
+
+
+    padding:10px 12px;
+
+
+    border-radius:10px;
+
+
+    text-align:center;
+
+
+    font-size:14px;
+
+
+    border:1px solid rgba(77,184,255,.25);
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.skill-tags span:hover,
+.tool-tags span:hover{
+
+
+    background:#4db8ff;
+
+
+    color:#06131f;
+
+
+    transform:translateY(-4px);
+
+
+}
+
+
+
+
+/* ==========================
+      Tools Layout
+========================== */
+
+
+.tool-tags{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:14px;
+
+
+}
+
+
+
+
+
+/* ==========================
+       Footer
+========================== */
+
+
+footer{
+
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#d7e7f7;
+
+}
+
+
+
+/* ==========================
+       Mobile View
+========================== */
+
+
+@media(max-width:768px){
+
+
+.about-page{
+
+    width:90%;
+
+}
+
+
+
+.about-page h1{
+
+    font-size:32px;
+
+}
+
+
+
+.skill-tags{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.tool-tags{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.objective-card,
+.skills-card,
+.tools-card{
+
+    padding:20px;
+
+}
+
+
 }
 /* ===== Premium Portfolio Glow Effect ===== */
 
