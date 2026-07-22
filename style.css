@@ -857,3 +857,33 @@ h2:hover{
     margin:0 auto 20px;
     box-shadow:0 0 25px rgba(0,212,255,.5);
 }
+/* Moving Background Lines */
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background:
+        linear-gradient(90deg, transparent 49%, rgba(77,184,255,0.15) 50%, transparent 51%),
+        linear-gradient(0deg, transparent 49%, rgba(77,184,255,0.15) 50%, transparent 51%);
+    background-size: 80px 80px;
+    animation: moveLines 12s linear infinite;
+    z-index: -1;
+}
+
+
+@keyframes moveLines {
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(-80px,-80px);
+    }
+}
