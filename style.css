@@ -897,3 +897,45 @@ h2:hover{
         transform:translateX(80px);
     }
 }
+.skill-card{
+    background:rgba(11,34,57,0.7);
+    backdrop-filter:blur(10px);
+    padding:25px;
+    border-radius:18px;
+    border:1px solid rgba(77,184,255,0.4);
+    transition:0.4s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+
+.skill-card::before{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-50%;
+    width:200%;
+    height:200%;
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(77,184,255,0.25),
+        transparent
+    );
+    transform:rotate(25deg);
+    transition:0.6s;
+}
+
+
+.skill-card:hover::before{
+    left:100%;
+}
+
+
+.skill-card:hover{
+    transform:translateY(-12px);
+    border-color:#4db8ff;
+    box-shadow:
+    0 0 20px rgba(77,184,255,0.5),
+    0 0 40px rgba(77,184,255,0.2);
+}
