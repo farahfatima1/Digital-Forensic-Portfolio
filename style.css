@@ -1967,3 +1967,14 @@ section{
 }
 
 }
+.projects-section{
+    background:#0a192f !important;
+}
+
+.projects{
+    background:transparent !important;
+}
+
+.project-card{
+    background:rgba(16,44,72,0.85) !important;
+}
