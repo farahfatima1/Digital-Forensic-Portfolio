@@ -388,3 +388,60 @@ nav ul li{
 }
 
 }
+
+/* ===== Contact + Stats ===== */
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.contact-card,
+.stats-card{
+    background:#102c48;
+    padding:30px;
+    border-radius:15px;
+}
+
+.contact-card h3{
+    color:#4db8ff;
+    margin-bottom:20px;
+}
+
+.contact-card p{
+    margin:15px 0;
+    color:#d7e7f7;
+}
+
+
+.stats-card{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    text-align:center;
+}
+
+.stat h3{
+    color:#4db8ff;
+    font-size:35px;
+}
+
+.stat p{
+    color:#d7e7f7;
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.stats-card{
+    grid-template-columns:1fr;
+}
+
+}
