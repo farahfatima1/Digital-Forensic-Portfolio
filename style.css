@@ -897,32 +897,18 @@ h2:hover{
         transform:translateX(80px);
     }
 }
-/* ===========================
-   Skills Section
-=========================== */
-
-.skills{
-    padding:80px 8%;
-}
-
-.skills h2{
-    text-align:center;
-    font-size:40px;
-    color:#4db8ff;
-    margin-bottom:50px;
-}
-
-/* 2x2 Grid */
+/* Skills Grid */
 .skills-grid{
     display:grid;
-    grid-template-columns:repeat(2,550px);
-    justify-content:center;
+    grid-template-columns:repeat(2, 1fr);
     gap:30px;
+    max-width:1100px;
+    margin:auto;
 }
 
 /* Skill Card */
 .skill-card{
-    width:550px;
+    width:100%;
     min-height:220px;
     padding:24px;
 
@@ -933,53 +919,12 @@ h2:hover{
     border-radius:12px;
 
     transition:0.35s ease;
+    box-sizing:border-box;
 }
 
-/* Hover Effect */
 .skill-card:hover{
     transform:translateY(-8px);
     box-shadow:0 0 25px rgba(77,184,255,0.35);
-    border-color:#4db8ff;
-}
-
-/* Heading */
-.skill-card h3{
-    color:#4db8ff;
-    font-size:22px;
-    margin-bottom:18px;
-}
-
-/* Tags Container */
-.skill-tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-}
-
-/* Individual Tag */
-.skill-tags span{
-    background:#10273f;
-    color:#ffffff;
-
-    padding:8px 16px;
-
-    border-radius:50px;
-
-    border:1px solid rgba(77,184,255,0.25);
-
-    font-size:14px;
-    font-weight:500;
-
-    transition:0.3s ease;
-
-    cursor:default;
-}
-
-/* Tag Hover */
-.skill-tags span:hover{
-    background:#4db8ff;
-    color:#06131f;
-    transform:scale(1.05);
 }
 
 /* Mobile */
@@ -987,10 +932,6 @@ h2:hover{
 
 .skills-grid{
     grid-template-columns:1fr;
-}
-
-.skill-card{
-    width:100%;
 }
 
 }
