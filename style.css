@@ -356,3 +356,35 @@ nav ul li{
     }
 
 }
+
+.menu-icon{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#4db8ff;
+}
+
+
+@media(max-width:768px){
+
+.menu-icon{
+    display:block;
+}
+
+nav ul{
+    display:none;
+    flex-direction:column;
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+}
+
+nav ul.active{
+    display:flex;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+}
